@@ -1,54 +1,137 @@
-<header>
-
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
-
-# GitHub Pages
-
-_Create a site or blog from your GitHub repositories with GitHub Pages._
-
-</header>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+    <head>
+        <style>
+            @keyframes fade-in {
+                0%{opacity: 0;}
+                50%{opacity: 50;}
+                100%{opacity: 100;}
+            }
+            :root {
+                --border: 3px
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(27, 27, 27);   
+            }
+            div {
+                animation-name: fade-in;
+                animation-duration: 2s;
+            }
+            .hover_text {
+                width: 140px;
+                height: 1200px;
+                background-color: rgb(72, 162, 247);
+                background-image: linear-gradient(rgb(72, 162, 247), rgb(49, 101, 150));
+                border: solid, var(--border), rgba(41, 87, 131, 0.719);
+                transition: width 2s;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 4px;
+            }
+            .hover_text:hover {
+                width: 480px
+            }
+            .header_text {
+                height: fit-content;
+            }
+            h1 {
+                font-size: 25px;
+                text-shadow: -1px 0 rgb(210, 210, 210), 0 1px rgb(210, 210, 210), 1px 0 rgb(210, 210, 210), 0 -1px rgb(210, 210, 210);
+                transition: height 3s;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+                border: solid, black, var(--border);
+                height: 60px;
+                border-radius: 4px;
+                box-shadow: 4px 4px rgba(58, 58, 58, 0.486);
+            }
+            p {
+                font-size: medium;
+                text-align: center;
+                background-color: rgb(255, 255, 255);
+                border: solid, black, var(--border);
+                border-radius: 4px;
+                box-shadow: 4px 4px rgba(58, 58, 58, 0.486);
+            }
+            img {
+                width: inherit;
+                height: inherit;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                object-fit: cover;
+            }
+            #img_holder {
+                background-color: white;
+                border: var(--border), solid, black;
+                width: 110px;
+                height: 110px;
+                padding: 5px;
+                border-radius: 4px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                transition: height 2s;
+                transition: width 2s;
+                box-shadow: 4px 4px rgba(58, 58, 58, 0.486);
+            }
+            a {
+                color: blue;
+                text-decoration: underline;
+            }
+            .Navbar {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                float: left;
+                border: var(--border), rgb(255, 255, 255), solid;
+                border-radius: 2px;
+            }
+            li a {
+                display: block;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 5px 5px;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) {
+                color: rgb(39, 39, 39);
+                background-color: #ffffff;
+            }
+            .active {
+                background-color: #4fa1ff;
+            }
+        </style>
+        <title>Faith's Webpage</title>
+        <link rel="icon" type="image/x-icon" href="file:///C:/Users/29-HaqReh/Downloads/LUFFFFYYYY.jpeg">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <ul class="Navbar">
+            <strong><li ><a class="active"href="file:///C:/Users/29-HaqReh/OneDrive/Desktop/web%20development/webpages.html/Porfollio/mainpage.html">Main Page</a></strong></li>
+            <strong><li><a href="https://discord.gg/HJznCb7WVk">contact</a></strong></li>
+            <strong><li><a href="file:///C:/Users/29-HaqReh/OneDrive/Desktop/web%20development/webpages.html/Porfollio/sidepage.html">extra info</a></strong></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="hover_text">
+            <h1 class="header_text">Faith's Website</h1>
+            <p>Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem </p>
+            <br>
+            <div class="hitbox_img">
+                <div id="img_holder">
+                    <img src="https://lh5.googleusercontent.com/ffq1jK5m9OEhlV_irmcmwzhhsv3r_sObg1Z_mo7UQrc5KNN7OGVMgQvRAiYPttorGx0uAYaWoiNej-w9ooQ4ApM">
+                </div>
+            </div>
+            <br>
+            <p>Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem</p>
+            <div class="resources">
+                <p>you can context me via my <a href="https://discord.gg/HJznCb7WVk">discord server</a></p>
+                <p><a href="file:///C:/Users/29-HaqReh/OneDrive/Desktop/web%20development/webpages.html/Porfollio/sidepage.html">Test</a></p>
+            </div>
+            <div>
+                <p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis sequi ducimus culpa libero laudantium quidem reiciendis nemo hic nostrum, sunt eos impedit inventore mollitia, eligendi voluptas exercitationem dolores totam?</p>
+        </div>
+    </body>
